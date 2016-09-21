@@ -1,12 +1,12 @@
 {
-  "name": "tracker",
+  "name": "amplitude-event-collector",
   "version": "1.0.0",
-  "description": "",
+  "description": "Small library to collect events and push to Amplitude",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Guillermo Gette",
   "license": "ISC",
   "dependencies": {
     "request": "^2.75.0"
