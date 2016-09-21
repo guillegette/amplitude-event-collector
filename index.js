@@ -1,5 +1,5 @@
 const cp = require('child_process');
-const collector = cp.fork('./collector.js');
+const collector = cp.fork(__dirname+'/collector.js');
 
 process.on('exit', () => {
     collector.kill();
