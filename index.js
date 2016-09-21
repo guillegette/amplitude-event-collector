@@ -12,7 +12,13 @@ module.exports = {
             eventName = event.name,
             eventProps = event.properties || {};
 
-        return collector.send({ user_id: userId, event_type: eventName, user_properties: userProps, event_properties: eventProps});
+        return collector.send({
+            user_id: userId,
+            event_type: eventName,
+            user_properties: userProps,
+            event_properties: eventProps,
+            time: new Date().getTime()
+        });
     }
 };
 
