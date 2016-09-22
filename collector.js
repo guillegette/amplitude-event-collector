@@ -12,6 +12,7 @@ process.on('message', (e) => {
 });
 
 function sendEvents(data){
+    console.log('sending data to amplitude...');
     return request({
         type: 'POST',
         url: 'https://api.amplitude.com/httpapi',
