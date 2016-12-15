@@ -17,7 +17,7 @@ module.exports = {
             event_type: eventName,
             user_properties: userProps,
             event_properties: eventProps,
-            time: new Date().getTime()
+            time: event.time ? event.time : new Date().getTime()
         });
     }
 };
